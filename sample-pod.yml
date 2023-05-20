@@ -8,7 +8,7 @@ metadata:
 spec:
   containers:
   - name: myapp
-    image: "debian-slim:latest"
+    image: "nginx:1.14.2"
     resources:
       limits:
         cpu: 200m
