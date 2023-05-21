@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod 
+metadata:
+  name: myapp-demo-multi
+spec:
+  containers:
+    - name: myapp-demo-multi
+      image: nginx:1.14.2
+
+    - name: myapp-demo-multi2
+      image: nginx:1.14.2
+      
