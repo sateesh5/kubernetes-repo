@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod 
+metadata:
+  name: terminationgraceperiod
+
+spec:
+  restartPolicy: Never
+  terminationgraceperiod: 1
+  containers:
+    - name: ubuntu
+      image: ubuntu
+      args:
+      - "sleep"
+      - "3600"
