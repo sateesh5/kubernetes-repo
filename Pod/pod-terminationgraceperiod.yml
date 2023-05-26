@@ -5,7 +5,7 @@ metadata:
 
 spec:
   restartPolicy: Never
-  terminationgracePeriod: 1
+  terminationGracePeriodSeconds: 1
   containers:
     - name: ubuntu
       image: ubuntu
