@@ -8,6 +8,6 @@ spec:
     - name: ubuntu
       image: ubuntu
       args: 
-    - "/bin/sh"
-    - "-c"
-    - "echo This is my path: $PATH"
+      - "/bin/sh"
+      - "-c"
+      - "echo This is my path: $PATH"
