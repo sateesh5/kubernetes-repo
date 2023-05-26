@@ -5,9 +5,9 @@ metadata:
 spec:
   restartPolicy: Never
   containers:
-  - name: ubuntu
-    image: ubuntu
-    args: 
+    - name: ubuntu
+      image: ubuntu
+      args: 
     - "/bin/sh"
     - "-c"
     - "echo This is my path: $PATH"
