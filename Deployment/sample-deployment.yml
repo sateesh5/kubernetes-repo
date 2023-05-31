@@ -13,5 +13,7 @@ spec:
         app: my-app
     spec:
       containers:
-      - name: nginx
-        image: nginx:1.14.2
+        - name: nginx
+          image: vinsdocker/k8s-app:v1
+          ports:
+            - containerPort: 80
