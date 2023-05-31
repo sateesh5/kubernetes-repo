@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: order-service-deploy
-
 spec:
   selector:
     matchLabels:
@@ -16,6 +15,6 @@ spec:
       containers:
         - name: order-service
           image: vinsdocker/k8s-app:v1
-          ports:
+          ports: 
         - name: "app-port"
           containerPort: 80
