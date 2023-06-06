@@ -1,0 +1,29 @@
+# .gitlab-ci.yml
+
+# Define the stages for the pipeline
+stages:
+  - build
+  - test
+  - deploy
+
+# Define job for building the application
+build:
+  stage: build
+  script:
+    - echo "Building the application..."
+    - # Add commands to build your application (e.g., compile code, bundle assets)
+
+# Define job for running tests
+test:
+  stage: test
+  script:
+    - echo "Running tests..."
+    - # Add commands to run your tests (e.g., unit tests, integration tests)
+
+# Define job for deploying the application
+deploy:
+  stage: deploy
+  script:
+    - echo "Deploying the application..."
+    - # Add commands to deploy your application (e.g., push Docker image, deploy to a server)
+
