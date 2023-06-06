@@ -8,7 +8,7 @@ spec:
     image: nginx
     startupProbe:
       httpGet:
-        path: /dummy
+        path: /
         port: 80
       periodSeconds: 1
       failureThreshold: 3
