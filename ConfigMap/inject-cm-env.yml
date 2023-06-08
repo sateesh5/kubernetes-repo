@@ -5,19 +5,18 @@ metadata:
 data:
   appUrl: "http://my-app-service"
   timeout: "30"
-
 ---
 apiVersion: v1
-kind: Pod 
+kind: Pod
 metadata:
   name: my-pod
 spec:
   restartPolicy: Never
   containers:
-    - name: ubuntu
-      image: ubuntu
-      envForm:
-      - configMaoRef:
-          name: app-properties
-      args: 
-      - env
+  - name: ubuntu
+    image: ubuntu
+    envFrom:
+    - configMapRef:
+        name: app-properties
+    args:
+    - env          
