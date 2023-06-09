@@ -27,4 +27,6 @@ spec:
           name: app-properties
           key: appUrl
     args:
-    - env          
+    - env
+
+
